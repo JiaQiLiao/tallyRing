@@ -11,9 +11,9 @@
       <group>
           <x-textarea v-model="comment"  :max="800" placeholder="说点什么吧" :show-counter="true" :rows="8" :cols="30" ></x-textarea>
       </group>
-      <!-- <uploader :uploadUrl="'http://dev-bbs.ajzhan.com/Api/User/upload'" :autoUpload='true'  :max="9"></uploader> -->
+      
       <div class="upload-wrap">
-      <el-upload action="//dev-bbs.ajzhan.com/Api/User/upload"
+      <el-upload action="上传接口地址"
         list-type="picture-card"
         :on-remove="handleRemove"
         :before-upload="beforeAvatarUpload"

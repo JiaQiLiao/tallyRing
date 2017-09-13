@@ -4,8 +4,7 @@ import { Toast } from 'mint-ui'
 import util from '../assets/common'
 axios.defaults.timeout = 5000;
 axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded;charset=UTF-8';
-axios.defaults.baseURL = '//dev-bbs.ajzhan.com/Api/';
-// axios.defaults.baseURL = 'http://192.168.1.129:8383';
+axios.defaults.baseURL = '接口地址';
 //POST传参序列化
 axios.interceptors.request.use((config) => {
   if(config.method  === 'post'){
